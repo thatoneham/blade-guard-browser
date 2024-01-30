@@ -2,8 +2,10 @@ import sys
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWebEngineWidgets import QWebEngineView, QWebEnginePage
 from PyQt5.QtCore import QUrl
+from flask import Flask
 
-# Subclass QWebEnginePage to handle the createWindow signal
+
+app = Flask(__name__)
 class WebPage(QWebEnginePage):
     def __init__(self, parent=None):
         super(WebPage, self).__init__(parent)
