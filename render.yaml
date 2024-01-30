@@ -1,2 +1,2 @@
-buildCommand: pip install -r requirements.txt
-startCommand: python main.py
+buildCommand: pip install -r main/requirements.txt
+startCommand: python main/main.py
